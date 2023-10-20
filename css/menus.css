@@ -1,0 +1,28 @@
+.menus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.active-option{
+    background-color: rgb(130, 146, 160);
+}
+
+.menus > div{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menus > div:hover{
+    background-color: rgba(240, 248, 255, 0.596);
+}
+.menus > div:first-child:hover{
+    background-color: rgb(216, 213, 213);
+}
+
+.fonts{
+    border-radius: 40px;
+    padding: 3px;
+    border: none;
+}

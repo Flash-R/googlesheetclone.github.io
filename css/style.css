@@ -1,0 +1,42 @@
+#header{
+    display: flex;
+    position: sticky;
+    width: fit-content;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+#header > b, #rowsCell div > div, #rowsCell div > b{
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid rgb(223, 220, 220);
+    padding: 10px 0px;
+}
+#rowsCell{
+    width: fit-content;
+}
+#rowsCell > div{
+    display: flex;
+}
+
+#header b:first-child, #rowsCell > div > b{
+    min-width: 40px ;
+}
+
+#rowsCell > div > b{
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+}
+#options{
+    background-color: rgb(214, 214, 218);
+    padding: 10px;
+}
+#options > #activeCell{
+    padding: 2px 20px;
+    background-color: #fff;
+}
+
+
+

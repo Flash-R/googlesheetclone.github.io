@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menus.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main style="width: 100vw; height: 100vh;">
+        <div id="options">
+            <div class="menus">
+                
+                <div class="fontStyles">
+                    <select name="" onchange="changeFontFamily(this)" id="fontFamily" class="fonts">
+                        <option value="Times New Roman">Times new roman</option>
+                        <option value="Aria">Arial</option>
+                        <option value="Mono Space">mono space</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Gill Sans">Gill Sans</option>
+                        <option value="Optima">Optima</option>
+                        <option value="Sans-Serif">sans-serif</option>
+                    </select>
+                    <select name="" onchange="changeFontSize(this)" id="fontSize" class="fonts">
+                        <option value="10px">10</option>
+                        <option value="12px">12</option>
+                        <option value="14px">14</option>
+                        <option value="16px" selected>16</option>
+                        <option value="18px">18</option>
+                        <option value="20px">20</option>
+                        <option value="24px">24</option>
+                        <option value="28px">28</option>
+                        <option value="32px">32</option>
+                    </select>
+                </div>
+                <div id="bold" onclick="onClickBold(this)">B</div>
+                <div id="italic" onclick="onClickItalic(this)">I</div>
+                <div id="underline" onclick="onClickUnderline(this)">U</div>
+                <div class="material-icons text-align" data-value="start" onclick="onClickTextAlign(this)">
+                    format_align_left</div>
+                <div class="material-icons text-align" data-value="center" onclick="onClickTextAlign(this)">
+                    format_align_center</div>
+                <div class="material-icons text-align" data-value="right" onclick="onClickTextAlign(this)">
+                    format_align_right</div>
+                <!-- font color picker -->
+                <div class="color-picker">
+                    <label for="color-picker">
+                        <span class="material-icons">format_color_text</span>
+                    </label>
+                    <input type="color" onchange="onChangeColor(this)" id="color-picker"
+                        style="width: 0px; height: 0px; padding: 0px; margin: 0px;">
+                </div>
+                <!-- bacgroung color picker -->
+                <div class="bg-color-picker">
+                    <label for="bg-color-picker">
+                        <span class="material-icons">format_color_fill</span>
+                    </label>
+                    <input type="color" onchange="onChangeBg(this)" id="bg-color-picker"
+                        style="width: 0px; height: 0px; padding: 0px; margin: 0px;">
+                </div>
+            </div>
+            <span id="activeCell">null</span>
+        </div>
+        <div id="header">
+            <b style="position: sticky; left: 0; background-color: #fff;">S.No</b>
+        </div>
+        <div id="rowsCell">
+
+        </div>
+    </main>
+</body>
+<script src="./js/options.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
